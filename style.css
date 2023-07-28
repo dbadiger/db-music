@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&family=Varela+Round&display=swap");
+/* 
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+}
+.wid-20 {
+  width: 20%;
+}
+.wid-25 {
+  width: 25%;
+}
+.wid-75 {
+  width: 75%;
+}
+h1 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 60px;
+  background-color: #0f0f0f;
+  color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0px 15px;
+  font-size: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 45px;
+}
+.logo span {
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.container {
+  height: 65vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.songs-container {
+  margin-top: 50px;
+}
+
+.songItem {
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  width: 80%;
+  color: black;
+  margin: 12px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 0 10px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.songItem img {
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50px;
+}
+.songItem i {
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bottom {
+  position: sticky;
+  height: 120px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+#myProgressBar {
+  width: 80vw;
+}
+.icons {
+  margin-top: 15px;
+}
+.icons i {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.song-info {
+  position: absolute;
+  left: 10vw;
+  margin-top: 15px;
+}
+
+.song-info img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+/* Responsive Design */
+@media only screen and (max-width: 992px) {
+}

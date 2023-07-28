@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>db-spotify-clone</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <div class="logo-img-text wid-20">
+          <li class="logo">
+            <img src="spotify-logo.png" alt="Spotify-Logo" /><span
+              >db-spotify</span
+            >
+          </li>
+        </div>
+        <div class="navbar wid-75">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songsList">
+        <h1>Best db Songs - No Copyright Songs</h1>
+        <div class="songs-container">
+          <div class="songItem">
+            <img src="cover_images/cover.jpg" alt="cover-song" />
+            <span class="songName">Salam Rocky Bhai - KGF 2</span>
+            <span class="songlistplay">
+              <span class="timestamp">4:32</span>
+              <i id="0" class="songItemPlay fa-regular fa-circle-play"></i>
+            </span>
+          </div>
+
+          <div class="songItem">
+            <img src="cover_images/cover.jpg" alt="cover-song" />
+            <span class="songName">I Love You</span>
+            <span class="songlistplay">
+              <span class="timestamp">4:00</span>
+              <i id="1" class="songItemPlay fa-regular fa-circle-play"></i>
+            </span>
+          </div>
+
+          <div class="songItem">
+            <img src="cover_images/cover.jpg" alt="cover-song" />
+            <span class="songName">Give me some suns...</span>
+            <span class="songlistplay">
+              <span class="timestamp">5:30</span>
+              <i id="2" class="songItemPlay fa-regular fa-circle-play"></i>
+            </span>
+          </div>
+
+          <div class="songItem">
+            <img src="cover_images/cover.jpg" alt="cover-song" />
+            <span class="songName">All is Well - 3 idiots</span>
+            <span class="songlistplay">
+              <span class="timestamp">6:32</span>
+              <i id="3" class="songItemPlay fa-regular fa-circle-play"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <div class="icons">
+        <i
+          class="fa-solid fa-1x fa-backward"
+          id="previous"
+          style="color: #ffffff"
+        ></i>
+        <i
+          class="fa-regular fa-circle-play"
+          style="color: #ffffff"
+          id="masterPlay"
+        ></i>
+        <i
+          class="fa-solid fa-1x fa-forward"
+          id="next"
+          style="color: #ffffff"
+        ></i>
+      </div>
+
+      <div class="song-info">
+        <img src="play.gif" width="50px" alt="" id="gif" /><span
+          id="masterSongName"
+          style="padding: 0 20px"
+        >
+          Tum Hi Ho</span
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
